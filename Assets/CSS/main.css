@@ -2,13 +2,20 @@ body {
   background-image: url(/Users/Ericdahan/Desktop/Portfolio1/Assets/images/space2.jpeg);
 }
 
+#enter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 h1 {
   color: white;
   text-align: center;
 }
 
 h2 {
-  color: #ccff00;
+  color: #87ff2a;
 }
 
 #logo {
@@ -56,10 +63,10 @@ h2 {
   background-color: black;
   z-index: 2;
   vertical-align: middle;
-  color: #ccff00;
+  color: #87ff2a;
 
   border: ridge;
-  border-color: #ccff00;
+  border-color: #87ff2a;
 }
 
 .flip-card-back {
@@ -67,15 +74,15 @@ h2 {
   color: white;
   transform: rotateY(180deg);
   z-index: 1;
-  color: #ccff00;
+  color: #87ff2a;
 
   font-size: xx-small;
   border: ridge;
-  border-color: #ccff00;
+  border-color: #87ff2a;
 }
 
 .navbar {
-  background-color: #ccff00;
+  background-color: #87ff2a;
   color: white;
 }
 
@@ -89,4 +96,13 @@ ul {
 }
 .fade {
   opacity: 1;
+}
+
+#simpleUsage {
+  color: #87ff2a;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Orbitron", sans-serif;
 }
