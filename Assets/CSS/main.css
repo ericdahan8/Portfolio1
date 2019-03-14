@@ -1,0 +1,92 @@
+body {
+  background-image: url(/Users/Ericdahan/Desktop/Portfolio1/Assets/images/space2.jpeg);
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  color: #ccff00;
+}
+
+#logo {
+  text-align: center;
+}
+
+#photo {
+  text-align: center;
+  margin-left: -20px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  text-align: center;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 10 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: solid transparent;
+  border-radius: 50%;
+  left: 5px;
+}
+
+.flip-card-front {
+  background-color: black;
+  z-index: 2;
+  vertical-align: middle;
+  color: #ccff00;
+
+  border: ridge;
+  border-color: #ccff00;
+}
+
+.flip-card-back {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+  color: #ccff00;
+
+  font-size: xx-small;
+  border: ridge;
+  border-color: #ccff00;
+}
+
+.navbar {
+  background-color: #ccff00;
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+ul {
+  color: white;
+  font-size: small;
+}
+.fade {
+  opacity: 1;
+}
