@@ -14,11 +14,15 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="Assets/CSS/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg stuck">
+      <nav class="navbar navbar-expand-lg sticky">
         <a class="navbar-brand" href="./index.html">Eric Dahan</a>
         <button
           class="navbar-toggler"
@@ -32,25 +36,48 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!----Audio-->
+
+        <script>
+          function play() {
+            var audio = document.getElementById("audio");
+            audio.play();
+          }
+        </script>
+
+        <input
+          class="btn-dark"
+          type="button"
+          value="Space Music"
+          onclick="play()"
+          style="position: absolute; right: 0; margin: 5px;"
+        />
+        <audio
+          id="audio"
+          src="Assets/Interstellar Main Theme - Extra Extended - Soundtrack by Hans Zimmer.ogg"
+        ></audio>
+
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="color: white;">
             <li class="nav-item">
-              <a class="nav-link active" href="#"
-                >About <span class="sr-only">(current)</span></a
-              >
+              <a class="nav-link" href="./index2.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./category.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="bapple-link" href="./bucket-list.html"
+              <a class="nav-link" id="portfolio" href="./index3.html"
                 >Portfolio</a
               >
             </li>
+            <div id="logo">
+              <img src="Assets/images/kgsmall.png" height="30px" alt="logo" />
+            </div>
           </ul>
         </div>
       </nav>
     </header>
+
+    <br />
+    <br />
+    <br />
 
     <div class="container">
       <div class="row">
@@ -66,8 +93,8 @@
                 Our local-search service of manhattan.
               </p>
               <a
-                type="button"
-                class="btn btn-dark"
+                type="btn-dark"
+                class="btn "
                 href="https://rahul-vig.github.io/TheBappleList/index.html"
                 target="_blank"
               >
@@ -78,38 +105,95 @@
         </div>
         <div class="col-lg-3">
           <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap" />
+            <img
+              class="card-img-top"
+              src="Assets/images/wordguessgame.png"
+              alt="Card image cap"
+            />
             <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              <p class="card-text" style="color:black;">
+                A Company themed Word-Guess Game
               </p>
+              <a
+                type="btn-dark"
+                class="btn "
+                href="https://ericdahan8.github.io/Word-Guess-Game/index.html"
+                target="_blank"
+              >
+                Click here
+              </a>
             </div>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap" />
+            <img
+              class="card-img-top"
+              src="Assets/images/starwarsgame.png"
+              alt="Card image cap"
+            />
             <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              <p class="card-text" style="color:black;">
+                A Simple Role-play Star Wars Game
               </p>
+              <a
+                type="btn-dark"
+                class="btn "
+                href="https://ericdahan8.github.io/unit-4-Game/Index.html"
+                target="_blank"
+              >
+                Click here
+              </a>
             </div>
           </div>
         </div>
+
         <div class="col-lg-3">
           <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap" />
+            <img
+              class="card-img-top"
+              src="Assets/images/giphy.png"
+              alt="Card image cap"
+            />
             <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              <p class="card-text" style="color:black;">
+                Use this page to find any Giphy you need!
               </p>
+              <a
+                type="btn-dark"
+                class="btn "
+                href="https://ericdahan8.github.io/Giphy/"
+                target="_blank"
+              >
+                Click here
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <footer class="footer">
+      <p id="copyright" style="text-align:center;">
+        <a
+          href="hhttps://www.linkedin.com/in/eric-dahan-965176a6/"
+          target="_blank"
+          ><img
+            src="Assets/images/kisspng-linkedin-computer-icons-business-advertising-compa-grey-background-5acab17806b152.7517612915232331440274.png"
+            alt="Linked In"
+            class="icon"
+            width="35px;"
+        /></a>
+        copyright © 2019
+
+        <a href="https://github.com/ericdahan8" target="_blank"
+          ><img
+            src="Assets/images/githublogowhite.png"
+            alt="Git Hub"
+            class="icon"
+            width="30px;"
+        /></a>
+      </p>
+    </footer>
   </body>
 </html>

@@ -18,11 +18,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="Assets/CSS/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
   </head>
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg stuck">
+      <nav class="navbar navbar-expand-lg sticky">
         <a class="navbar-brand" href="./index.html">Eric Dahan</a>
         <button
           class="navbar-toggler"
@@ -36,18 +37,29 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
+
+<!----Audio-->
+
+<script>
+  function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+                 }
+   </script>
+
+<input class="btn-dark" type="button" value="Space Music"  onclick="play()" style="position: absolute; right: 0; margin: 5px;">
+<audio id="audio" src="Assets/Interstellar Main Theme - Extra Extended - Soundtrack by Hans Zimmer.ogg" ></audio>
+ 
+
+
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="color: white;">
+           
             <li class="nav-item">
-              <a class="nav-link active" href="#"
-                >About <span class="sr-only">(current)</span></a
-              >
+              <a class="nav-link" href="./index2.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./category.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="bapple-link" href="./bucket-list.html"
+              <a class="nav-link" id="portfolio" href="./index3.html"
                 >Portfolio</a
               >
             </li>
@@ -58,7 +70,12 @@
         </div>
       </nav>
     </header>
+
+
     <main>
+      
+<br>
+     <br>
       <br />
       <div class="container">
         <div class="row">
@@ -247,12 +264,36 @@
             "During the time I have worked with Eric he has proved himself a versatile and committed individual. Thus far Eric has continued to exceed his targets and has approached every challenge with diligence and zeal. I have high hopes for the future with Eric on my team" - Klein Kwok Consultant CaxtonFX</p>
             </div>
           </p>
+
+          
         </div>
       </div>
     </div>
   </body>
 
-  <footer></footer>
+  <footer class="footer">
+    
+          
+      <a type="btn-dark" class="btn" href="Assets/Eric Dahan CV 2019 FULL (15).docx" target="_blank" style="color:white; text-align: center;">Click Here for full CV</a>
+
+      <p id="copyright" style="text-align:center;">
+          <a href="https://www.linkedin.com/in/eric-dahan-965176a6/" target="_blank"
+          ><img
+            src="Assets/images/kisspng-linkedin-computer-icons-business-advertising-compa-grey-background-5acab17806b152.7517612915232331440274.png"
+            alt="Linked In"
+            class="icon"
+            width="35px;"
+        /></a>
+        copyright  © 2019
+        
+        <a href="https://github.com/ericdahan8" target="_blank"
+            ><img src="Assets/images/githublogowhite.png" alt="Git Hub" class="icon" width="30px;"
+          /></a>
+
+      </p>
+
+      
+    </footer>
 </html>
 <!-- waypoint -->
 

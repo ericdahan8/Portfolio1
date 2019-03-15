@@ -11,48 +11,63 @@
     <title>Eric Dahan</title>
 
     <link rel="stylesheet" href="Assets/CSS/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 
     <body>
-            <header>
-              <nav class="navbar navbar-expand-lg stuck">
-                <a class="navbar-brand" href="./index.html">Eric Dahan</a>
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarTogglerDemo02"
-                  aria-controls="navbarTogglerDemo02"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-        
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#"
-                        >About <span class="sr-only">(current)</span></a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./category.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="bapple-link" href="./bucket-list.html"
-                        >Portfolio</a
-                      >
-                    </li>
-                  </ul>
+        <header>
+            <nav class="navbar navbar-expand-lg sticky">
+              <a class="navbar-brand" href="./index.html">Eric Dahan</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+      
+      <!----Audio-->
+      
+      <script>
+        function play(){
+             var audio = document.getElementById("audio");
+             audio.play();
+                       }
+         </script>
+      
+      <input class="btn-dark" type="button" value="Space Music"  onclick="play()" style="position: absolute; right: 0; margin: 5px;">
+      <audio id="audio" src="Assets/Interstellar Main Theme - Extra Extended - Soundtrack by Hans Zimmer.ogg" ></audio>
+       
+      
+      
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="color: white;">
+                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index2.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="portfolio" href="./index3.html"
+                      >Portfolio</a
+                    >
+                  </li>
+      <div id="logo">
+                  <img src="Assets/images/kgsmall.png" height="30px" alt="logo">
                 </div>
-              </nav>
-            </header>
-    
-</head>
+                </ul>
+              </div>
+            </nav>
+          </header>
+      
+<br>
+<br>
+<br>
 
-
-    <div class="container" style="color: white
-    ">   
+    <div class="container form" style="color: white">   
     
 <div class="row">
     <div class="col-md-12">
@@ -87,7 +102,7 @@
                         </label>
                       </div>
                     </div>
-                    <button class="btn btn-primary" type="submit">Submit form</button>
+                    <button class="btn-dark" type="submit" style="background-color: #87ff2a">Submit form</button>
                   </form>
                   
                   
@@ -97,10 +112,28 @@
 </div>
 </div>
 
-<div class="container-fluid" style="padding-right: 0; padding-left: 0;"> 
-    <footer >
-    </footer>
-    </div>
+<footer class="footer">
+    
+          
+    
+    <p id="copyright" style="text-align:center;">
+        <a href="https://www.linkedin.com/in/eric-dahan-965176a6/" target="_blank"
+        ><img
+          src="Assets/images/kisspng-linkedin-computer-icons-business-advertising-compa-grey-background-5acab17806b152.7517612915232331440274.png"
+          alt="Linked In"
+          class="icon"
+          width="35px;"
+      /></a>
+      copyright  © 2019
+      
+      <a href="https://github.com/ericdahan8" target="_blank"
+          ><img src="Assets/images/githublogowhite.png" alt="Git Hub" class="icon" width="30px;"
+        /></a>
+
+    </p>
+
+    
+  </footer>
     
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

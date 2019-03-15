@@ -1,18 +1,25 @@
 new TypeIt("#simpleUsage", {
-  strings: ["Hello", "Welcome to my page", "I am a Coder"],
-  speed: 200,
+  strings: ["Hello", "Welcome", "This is my portfolio", "I am a Coder"],
+  speed: 250,
   breakLines: false,
   waitUntilVisible: true
 })
 
+  .pause(600)
   .delete(5)
-  .pause(500)
   .type("Developer")
   .delete(9)
-  .pause(500)
-  .type("Front-End developer")
-  .delete(21)
-  .pause(500)
+  .pause(600)
+  .type("Software Engi")
+  .delete(15)
+  .pause(2500)
   .type("Eric")
+  .break()
+  .pause(2500)
+  .type("Enter Now")
 
   .go();
+
+// $("#enter").on("click", function() {
+//   $(".interstellar").hide();
+// });
