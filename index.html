@@ -47,7 +47,7 @@
                  }
    </script>
 
-<input class="btn-dark" type="button" value="Space Music"  onclick="play()" style="position: absolute; right: 0; margin: 5px;">
+<input class="btn-dark" type="button" value="Space Music"  onclick="play()" style="position: absolute; right: 50px; margin: 5px;">
 <audio id="audio" src="Assets/Interstellar Main Theme - Extra Extended - Soundtrack by Hans Zimmer.ogg" ></audio>
  
 
@@ -73,10 +73,30 @@
 
 
     <main>
+
+
+      <!---nasa-->
+      <b>API URL:</b>
+  <pre id="reqObject"></pre>
+  <p style="position: absolute;
+  right: 10px;
+  color: white;
+  ">Astronomy pic of the day</p>
+  
+ <br>
+  <img id="apod_img_id" width="250px"/>
+  
+  <h3 id="apod_title" style="text-align: center;"></h3>
+
+  <br/>
+  
+
+      <!---weather-->
+      <aside id="weather" class="btn3 btn-dark"></aside>
       
 <br>
-     <br>
-      <br />
+     
+      
       <div class="container">
         <div class="row">
           <div class="col-12" id="photo">

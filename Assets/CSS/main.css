@@ -159,3 +159,30 @@ ul {
   transform: translate(-50%, -100%);
   background-color: #87ff2a;
 }
+
+#weather {
+  width: 14%;
+  height: 12%;
+  color: white;
+  position: absolute;
+  left: 30px;
+  top: 10%;
+
+  text-align: center;
+}
+
+.displayTemp {
+  font-size: 10px;
+}
+
+#apod_img_id,
+#apod_title {
+  position: absolute;
+  right: 20px;
+  color: white;
+  width: 15%;
+}
+#apod_title {
+  top: 35%;
+  font-size: x-large;
+}
