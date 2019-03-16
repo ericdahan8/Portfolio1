@@ -1,5 +1,5 @@
 body {
-  background-image: url(/Users/Ericdahan/Desktop/Portfolio1/Assets/images/space2.jpeg);
+  background-image: url(../images/space2.jpeg);
 }
 
 #enter {
@@ -151,4 +151,11 @@ ul {
 
 .form {
   font-family: "Orbitron", sans-serif;
+}
+
+.btn1 {
+  position: absolute;
+  left: 80%;
+  transform: translate(-50%, -100%);
+  background-color: #87ff2a;
 }
